@@ -7,16 +7,37 @@
 //
 
 #import "ViewController.h"
+#import "iOS9_Star_Wars_Hybrid-Swift.h"
 
 @interface ViewController ()
+
+@property (nonatomic, nonnull) PersonController *personController;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
 @implementation ViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+	self = [super initWithCoder:coder];
+	if (self) {
+		_personController = [[PersonController alloc] init];
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+	// Fetch
+	[self.personController searchForPeopleWith:@"Luke" completion:^(NSArray<LSIPerson *> * _Nullable people, NSError * _Nullable error) {
+		
+		NSLog(@"People: %@", people);
+		
+	}];
+	
+	
+	
 }
 
 
