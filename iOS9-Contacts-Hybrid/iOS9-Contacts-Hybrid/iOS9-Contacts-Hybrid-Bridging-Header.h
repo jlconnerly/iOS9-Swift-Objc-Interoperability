@@ -4,3 +4,6 @@
 
 // Import Objective-C Code Files to give Swift Visibility of our Objc classes
 // and symbols
+
+#import "LSIContactController.h"
+

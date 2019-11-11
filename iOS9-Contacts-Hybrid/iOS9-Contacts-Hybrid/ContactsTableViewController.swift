@@ -10,6 +10,8 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
 
+	var contactController = LSIContactController()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,15 +19,18 @@ class ContactsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return contactController.contacts.count
+	}
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
 
-        // Configure the cell...
+		guard let contact = contactController.contacts[indexPath.row] as? Contact else { return cell }
+		
+		cell.textLabel?.text = contact.name
+		cell.detailTextLabel?.text = contact.relationship
 
-        return cell
-    }
+		return cell
+	}
 }
