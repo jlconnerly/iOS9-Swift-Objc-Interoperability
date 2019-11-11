@@ -12,11 +12,13 @@ class PersonController: NSObject {
 	
 	let baseURL = URL(string: "https://swapi.co/api/people")
 	
-	override init() {
+//	override init() {
+//		let person = LSIPerson()
+//	}
+	
+	func searchForPeople(with searchTerm: String,
+						 completion: @escaping ([LSIPerson]?, Error?) -> Void) {
 		
-		
-		
-		let person = LSIPerson()
 		
 		
 	}
