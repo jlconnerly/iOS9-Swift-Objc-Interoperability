@@ -15,6 +15,7 @@
 		BD100FEB2379DC4E002426B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD100FEA2379DC4E002426B7 /* main.m */; };
 		BD100FF22379DC91002426B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD100FF12379DC91002426B7 /* Main.storyboard */; };
 		BD100FF52379DCD7002426B7 /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD100FF42379DCD7002426B7 /* LSIPerson.m */; };
+		BD100FF82379DDEA002426B7 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD100FF72379DDEA002426B7 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		BD100FF12379DC91002426B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BD100FF32379DCD6002426B7 /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
 		BD100FF42379DCD7002426B7 /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
+		BD100FF62379DDE9002426B7 /* iOS9-Star-Wars-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS9-Star-Wars-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD100FF72379DDEA002426B7 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				BD100FDC2379DC4B002426B7 /* SceneDelegate.m */,
 				BD100FF32379DCD6002426B7 /* LSIPerson.h */,
 				BD100FF42379DCD7002426B7 /* LSIPerson.m */,
+				BD100FF72379DDEA002426B7 /* PersonController.swift */,
 				BD100FDE2379DC4B002426B7 /* ViewController.h */,
 				BD100FDF2379DC4B002426B7 /* ViewController.m */,
 				BD100FF12379DC91002426B7 /* Main.storyboard */,
@@ -77,6 +81,7 @@
 				BD100FE62379DC4E002426B7 /* LaunchScreen.storyboard */,
 				BD100FE92379DC4E002426B7 /* Info.plist */,
 				BD100FEA2379DC4E002426B7 /* main.m */,
+				BD100FF62379DDE9002426B7 /* iOS9-Star-Wars-Hybrid-Bridging-Header.h */,
 			);
 			path = "iOS9-Star-Wars-Hybrid";
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				TargetAttributes = {
 					BD100FD42379DC4B002426B7 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -155,6 +161,7 @@
 				BD100FDA2379DC4B002426B7 /* AppDelegate.m in Sources */,
 				BD100FEB2379DC4E002426B7 /* main.m in Sources */,
 				BD100FDD2379DC4B002426B7 /* SceneDelegate.m in Sources */,
+				BD100FF82379DDEA002426B7 /* PersonController.swift in Sources */,
 				BD100FF52379DCD7002426B7 /* LSIPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS9-Star-Wars-Hybrid/Info.plist";
@@ -296,6 +304,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS9-Star-Wars-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS9-Star-Wars-Hybrid/iOS9-Star-Wars-Hybrid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -304,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS9-Star-Wars-Hybrid/Info.plist";
@@ -313,6 +325,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS9-Star-Wars-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS9-Star-Wars-Hybrid/iOS9-Star-Wars-Hybrid-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

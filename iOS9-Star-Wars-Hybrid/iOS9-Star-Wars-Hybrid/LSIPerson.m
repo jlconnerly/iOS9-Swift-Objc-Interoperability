@@ -31,6 +31,7 @@
     NSString *eyeColor = dictionary[@"eye_color"];
 
     if (!name || !birthYear || !heightString || !eyeColor) {
+		NSLog(@"Missing data from API for LSIPerson");
         return nil;
     }
 
