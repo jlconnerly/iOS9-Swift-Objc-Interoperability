@@ -8,19 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface LSIPerson : NSObject
 
-@property (nonatomic, copy, readonly, nonnull) NSString *name;
-@property (nonatomic, copy, readonly, nonnull) NSString *birthYear;
+@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy, readonly) NSString *birthYear;
 @property (nonatomic, readonly) double height;
-@property (nonatomic, copy, readonly, nonnull) NSString *eyeColor;
+@property (nonatomic, copy, readonly) NSString *eyeColor;
 
-- (nonnull instancetype)initWithName:(nonnull NSString *)name
-                   birthYear:(nonnull NSString *)birthYear
+- (instancetype)initWithName:(NSString *)name
+                   birthYear:(NSString *)birthYear
                       height:(double)height
-                    eyeColor:(nonnull NSString *)eyeColor;
+                    eyeColor:(NSString *)eyeColor;
 
 
-- (nullable instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary;
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
+
+NS_ASSUME_NONNULL_END
