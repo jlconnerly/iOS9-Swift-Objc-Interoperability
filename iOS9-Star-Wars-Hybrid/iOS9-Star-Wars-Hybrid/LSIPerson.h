@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(Person)
 @interface LSIPerson : NSObject
 
 @property (nonatomic, copy, readonly) NSString *name;

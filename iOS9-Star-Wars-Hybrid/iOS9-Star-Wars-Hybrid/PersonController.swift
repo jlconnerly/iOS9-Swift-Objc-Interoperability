@@ -18,7 +18,7 @@ class PersonController: NSObject {
 	//	}
 	
 	@objc func searchForPeople(with searchTerm: String,
-							   completion: @escaping ([LSIPerson]?, Error?) -> Void) {
+							   completion: @escaping ([Person]?, Error?) -> Void) {
 		var components = URLComponents(url: self.baseURL, resolvingAgainstBaseURL: true)!
 		
 		let searchItem = URLQueryItem(name: "search", value: searchTerm)
@@ -50,7 +50,7 @@ class PersonController: NSObject {
 				}
 				
 				// create array of people
-				let people = personDictionaries.compactMap { LSIPerson(dictionary: $0) }
+				let people = personDictionaries.compactMap { Person(dictionary: $0) }
 				completion(people, nil)
 				
 			} catch {
