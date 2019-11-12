@@ -43,6 +43,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32E1E9F5237A64520074D1B9 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FC72379CE47002426B7 /* LSIContactController.h */,
+				BD100FC82379CE47002426B7 /* LSIContactController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		32E1E9F7237A64690074D1B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FCA2379CED3002426B7 /* Contact.swift */,
+				32E1E9F5237A64520074D1B9 /* Model Controllers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32E1E9F8237A647A0074D1B9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FB62379CC80002426B7 /* Main.storyboard */,
+				BD100FBB2379CC83002426B7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32E1E9F9237A648B0074D1B9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FC42379CD36002426B7 /* ContactsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		32E1E9FA237A64C10074D1B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FB22379CC80002426B7 /* SceneDelegate.swift */,
+				BD100FB92379CC83002426B7 /* Assets.xcassets */,
+				BD100FB02379CC80002426B7 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32E1E9FB237A64CE0074D1B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD100FC62379CE47002426B7 /* iOS9-Contacts-Hybrid-Bridging-Header.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BD100FA42379CC80002426B7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,17 +115,12 @@
 		BD100FAF2379CC80002426B7 /* iOS9-Contacts-Hybrid */ = {
 			isa = PBXGroup;
 			children = (
-				BD100FB02379CC80002426B7 /* AppDelegate.swift */,
-				BD100FB22379CC80002426B7 /* SceneDelegate.swift */,
-				BD100FC42379CD36002426B7 /* ContactsTableViewController.swift */,
-				BD100FB62379CC80002426B7 /* Main.storyboard */,
-				BD100FCA2379CED3002426B7 /* Contact.swift */,
-				BD100FC72379CE47002426B7 /* LSIContactController.h */,
-				BD100FC82379CE47002426B7 /* LSIContactController.m */,
-				BD100FB92379CC83002426B7 /* Assets.xcassets */,
-				BD100FBB2379CC83002426B7 /* LaunchScreen.storyboard */,
+				32E1E9F7237A64690074D1B9 /* Models */,
+				32E1E9F9237A648B0074D1B9 /* View Controllers */,
+				32E1E9F8237A647A0074D1B9 /* Storyboards */,
+				32E1E9FB237A64CE0074D1B9 /* Helpers */,
+				32E1E9FA237A64C10074D1B9 /* Resources */,
 				BD100FBE2379CC83002426B7 /* Info.plist */,
-				BD100FC62379CE47002426B7 /* iOS9-Contacts-Hybrid-Bridging-Header.h */,
 			);
 			path = "iOS9-Contacts-Hybrid";
 			sourceTree = "<group>";
