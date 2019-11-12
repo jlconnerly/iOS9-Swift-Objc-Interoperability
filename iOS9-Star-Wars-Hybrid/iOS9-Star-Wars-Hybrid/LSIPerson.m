@@ -10,8 +10,7 @@
 
 @implementation LSIPerson
 
-- (instancetype)initWithName:(NSString *)name birthYear:(NSString *)birthYear height:(double)height eyeColor:(NSString *)eyeColor
-{
+- (instancetype)initWithName:(NSString *)name birthYear:(NSString *)birthYear height:(double)height eyeColor:(NSString *)eyeColor {
     self = [super init];
     if (self) {
         _name = [name copy];
@@ -22,8 +21,7 @@
     return self;
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-{
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     NSString *name = dictionary[@"name"];
     NSString *birthYear = dictionary[@"birth_year"];
     NSString *heightString = dictionary[@"height"];
